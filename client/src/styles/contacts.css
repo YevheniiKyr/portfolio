@@ -5,20 +5,20 @@
 }
 
 .contact-form-container {
-    background-color: #d3dbe1;
+    background-color: rgba(120, 217, 132, 0.81);
     padding-bottom: 2rem;
 
 }
 .contact-form {
-    border: 1px solid #5858ad;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #929dd9;
+    background-color: #62d28d;
     margin: 2rem auto;
     padding: 1rem;
     width: 70%;
 }
 .contact-form label {
-    color: white;
+    color: #000000;
     margin-right: 0.5rem;
 }
 
@@ -50,7 +50,7 @@
     width: 5rem;
     height: 2rem;
     border-radius: 10px;
-    background-color: #391779;
+    background-color: #054f16;
     border: none;
     color: white;
 }
@@ -61,8 +61,15 @@
     margin-top: 1rem;
 }
 
+.successSendEmail {
+    text-align: center;
+    color: #5a8a0f;
+}
 
-
+.failSendEmail {
+    text-align: center;
+    color: red;
+}
 @media (min-width: 992px) and (max-width: 1400px) {
     .contact-form {
         width: 40%;

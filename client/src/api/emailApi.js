@@ -1,11 +1,6 @@
 import {$host} from "./index";
 
-export const sendEmail = async (email) => {
-    const res = await $host.post('send-message/',
-        email
-    ).catch(error => {
-        console.log(error)
-    })
-    if (res) return res.data;
-    return null;
+export const sendEmail = async (formData) => {
+    const res = await $host.post('send-message/', formData)
+    return res.data;
 }

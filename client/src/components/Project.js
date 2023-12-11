@@ -56,6 +56,7 @@ const renderGithubLinks = (project) => {
         </>
     )
 }
+
 const Project = ({project}) => {
     return (
         <div className="project">
