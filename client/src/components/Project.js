@@ -1,38 +1,34 @@
 import React from 'react';
+import Technology from "./Technology";
 
 const renderTechnologies = (project) => {
     return (
-        <>
-            <p className="technologies_header"> Technologies : </p>
-            <p className="technologies">
+        <div>
+            <h4 className="technologies-header">Technologies</h4>
+            <div className="technologies">
                 {
-                    project.technologies.slice(0,-1).map(
-                        (tech, index) => <span key={index}>{tech}, </span>
+                    project.technologies.map(
+                        (tech, index) => <Technology key={index} name={tech}/>
                     )
                 }
-                <span>{project.technologies[project.technologies.length-1]}</span>
-            </p>
-        </>
+            </div>
+        </div>
     )
 }
 
 const renderDeployLinks = (project) => {
     return (
         project.deployLinks ?
-            <>
-                <p className="project_links">
+                <div className="project-links">
                     {
                         project.deployLinks.map(
                             (link, idx) =>
-                                <>
                                     <a href={link} key = {link} className="link" target="_blank" rel="noopener noreferrer">
                                         Life version {idx + 1}
                                     </a>
-                                </>
                         )
                     }
-                </p>
-            </>
+                </div>
             :
             <> </>
     )
@@ -40,8 +36,7 @@ const renderDeployLinks = (project) => {
 
 const renderGithubLinks = (project) => {
     return (
-        <>
-            <p className="project_links">
+            <div className="project-links">
                 {
                     project.github.map(
                         (link, idx) =>
@@ -52,26 +47,26 @@ const renderGithubLinks = (project) => {
                             </>
                     )
                 }
-            </p>
-        </>
+            </div>
     )
 }
 
 const Project = ({project}) => {
     return (
-        <div className="project">
-            <p> {project.name} </p>
+        <section className="project">
+            <h3 className="project-name"> {project.name} </h3>
+            <p className="description">{project.description}</p>
             <img
                 src={project.image}
                 alt={project.name}
             />
-            <div className="project_info">
-                <p className="description">{project.description}</p>
+            <div className="project-info">
                 {renderTechnologies(project)}
                 {renderDeployLinks(project)}
                 {renderGithubLinks(project)}
             </div>
-        </div>
+            <div className="divider"/>
+        </section>
     );
 };
 

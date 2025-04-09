@@ -1,152 +1,57 @@
 .project {
-    width: 30vw;
-    background-color: rgba(5, 66, 180, 0.34);
-    border: 2px solid #d2d7ea;
-    border-radius: 20px;
-    margin-top: 2rem;
-    column-gap: 20px;
-    text-align: center;
-    height: 55vh;
-    min-height: 350px;
-    padding-bottom: 0.5rem;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.project-section {
+    background-color: #fcfdfd;
+    padding-bottom: 4rem;
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
 }
 
-.project > img {
-    height: 50%;
-    width: 85%;
-    margin: 0;
+.project img {
+    margin-top: 2vh;
+    max-height: 50vh;
+    object-fit: contain;
+    max-width: 100%
 }
 
-.project > p {
-    margin-top: 5%;
-    margin-bottom: 5%;
+.project-name {
     font-size: 1.5rem;
-    color: #04194f;
+    color: #2a3b93;
     font-weight: 700;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .projects-header {
     text-align: center;
-    padding-top: 2rem; /* Use padding instead of margin */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2a3b93;
 }
 
-@media (max-width: 575px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-
-    .project {
-        width: 75vw;
-        height: 75vh;
-    }
-
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-
-    .project {
-        width: 50vw;
-        height: 60vh;
-    }
-
-    .project > img {
-        height: 40%;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .projects-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .project {
-        width: 35vw;
-        height: 60vh;
-    }
-
-    .project > img {
-        height: 40%;
-    }
-
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    .projects-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .project {
-        width: 30vw;
-        height: 60vh;
-    }
-
-    .project > img {
-        height: 40%;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-    .projects-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .project {
-        width: 30vw;
-        height: 75vh;
-    }
-}
-
-@media (min-width: 1400px) {
-    .projects-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-    }
-
-    .project {
-        width: 23vw;
-        height: 70vh;
-    }
-
-}
-
-@media (max-height: 640px) {
-    .project {
-        height: 100vh;
-    }
-
-}
-
-@media (max-height: 500px) {
-    .project {
-        height: 130vh;
-    }
-}
-
-@media (max-height: 400px) {
-    .project {
-        height: 150vh;
-    }
-
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .link {
-    color: #730ee1;
+    color: #0e12e1;
     margin-right: 5%;
     text-decoration: none;
     font-weight: 500;
-    /*font-family: 'Poppins', sans-serif;*/
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -154,23 +59,89 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     margin-top: 0.5rem;
-    text-align: center;
     font-weight: 450;
-    color: #1b0741;
+    color: #1c2b77;
     padding: 0 0.5rem;
+    text-align: justify;
 }
 
 .technologies {
     font-family: 'Space Mono', monospace;
-    padding: 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vh;
+    margin-top: 0.5rem;
 }
 
-.technologies_header {
-    font-family: 'Space Mono', monospace;
+.technologies-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #2a3b93;
+    text-align: center;
+    /*font-family: 'Space Mono', monospace;*/
     font-weight: 600;
     margin-top: 0.5rem;
 }
 
-.project_links {
+.project-links {
     margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+.badge {
+    background-color: #2a3b93;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+
+.project:not(:last-child) .divider {
+    background-color: #3b4987;
+    height: 2px;
+    margin-top: 4vh;
+}
+
+@media (max-width: 575px) {
+    :root {
+        font-size: 80%
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    :root {
+        font-size: 85%
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        font-size: 90%
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    :root {
+        font-size: 95%
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    :root {
+        font-size: 100%
+    }
+}
+
+@media (min-width: 1400px) {
+    :root {
+        font-size: 100%
+    }
+}
+
+
+

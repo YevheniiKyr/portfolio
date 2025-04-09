@@ -1,64 +1,81 @@
 .contact-header {
     text-align: center;
     padding-top: 2rem;
-    color: #1e0623;
+    color: #ffffff;
 }
 
 .contact-form-container {
-    background-color: rgba(120, 217, 132, 0.81);
+    background-color: #2a3b93;
     padding-bottom: 2rem;
-
+    font-family: 'Poppins', sans-serif
 }
+
 .contact-form {
-    border: 1px solid #ffffff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    background-color: #62d28d;
+    background-color: #2a3b93;
     margin: 2rem auto;
     padding: 1rem;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
+
 .contact-form label {
-    color: #000000;
+    color: #ffffff;
     margin-right: 0.5rem;
 }
 
 .contact-message-text-area {
     resize: none;
-    border-radius: 20px;
-    padding: 0.5rem;
-    width: 50%;
-}
-
-.message {
-    display: flex;
-    align-items: center;
-}
-.contact-message-label {
-
-}
-.contact-message-input {
     border-radius: 10px;
-    padding: 0.1rem;
+    padding: 0.5rem;
 }
+
+
+.contact-message-input {
+    border-radius: 5px;
+    border-color: transparent;
+    height: 1.5rem;
+    padding: 0.1rem;
+    width: 100%;
+}
+
 .contact-form-field {
     margin-bottom: 0.5rem;
     display: flex;
-    justify-content: center;
+    width: 70%;
+    flex-direction: column;
+}
+
+.message-field {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 .send-form-button {
+    padding: 10px;
     width: 5rem;
-    height: 2rem;
-    border-radius: 10px;
-    background-color: #054f16;
+    border-radius: 5px;
+    background-color: #cdd3e1;
     border: none;
-    color: white;
+    color: #121d47;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.send-form-button:hover {
+    background-color: #989db6;
 }
 
 .send-button-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    width: 100%;
 }
 
 .successSendEmail {
@@ -70,6 +87,13 @@
     text-align: center;
     color: red;
 }
+
+input:focus, textarea:focus {
+    outline: none; /* Прибрати стандартну синю рамку */
+    border: 2px solid black; /* Змінити колір рамки */
+    box-shadow: 0 0 5px rgba(105, 130, 177, 0.9);
+}
+
 @media (min-width: 992px) and (max-width: 1400px) {
     .contact-form {
         width: 40%;
@@ -77,7 +101,7 @@
 }
 
 @media (min-width: 1400px) {
-   
+
     .contact-form {
         width: 40%;
     }

@@ -4,6 +4,10 @@
     --header-height: 8vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 

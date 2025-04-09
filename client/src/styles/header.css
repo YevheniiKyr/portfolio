@@ -2,36 +2,34 @@
     height: var(--header-height);
     background-color: var(--header-color);
     display: flex;
-
+    font-family: 'Poppins', sans-serif
 }
 
 .external-links {
     color: aliceblue;
     flex: 2;
-    /*border: 5px solid #ccc;*/
-    align-self: center;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .external-links a {
     margin: 0 5vw 0 0 ;
+    display: flex;
+    align-items: center;
 }
+
 .internal-links {
     color: aliceblue;
     flex: 1;
-    /*border: 5px solid #ccc;*/
     align-self: center;
     text-align: center;
 }
+
 .internal-links  a {
     color: white;
     margin-right: 5vw;
     text-decoration: none;
-}
-.link-button {
-    border: none;
-    margin-right: 2vw;
-    cursor: pointer;
-    background-color: var(--header-color);
 }
 
 .header-icon {
@@ -39,10 +37,10 @@
     color: white;
     font-size: var(--icon-size);
 }
+
 @media (max-width: 768px) {
     .internal-links {
         display: flex;
         flex-direction: column;
-        margin: 0;
     }
 }

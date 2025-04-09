@@ -5,7 +5,7 @@ import {FaLinkedin} from "react-icons/fa";
 
 const Header = () => {
     return (
-        <div className="header">
+        <section className="header">
             <div className="external-links">
                 <a href="https://github.com/YevheniiKyr" target="_blank" rel="noopener noreferrer">
                     <FaGithub className={"header-icon"}/>
@@ -21,7 +21,7 @@ const Header = () => {
                 <a href="#my-projects">My projects</a>
                 <a href="#contact-form">Contact me</a>
             </div>
-        </div>
+        </section>
 
     );
 };
