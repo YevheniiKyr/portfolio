@@ -28,7 +28,7 @@ const Projects = () => {
             explore movies they are curious about, discover new ones, and make informed decisions about what to 
             watch next.`,
             technologies: ["React js", "Redux Toolkit", "Redux saga", "mui"],
-            deployLinks: ["https://luminous-halva-9e59b7.netlify.app/", "https://6544b498247b8873301722f4--relaxed-mermaid-c3d7c5.netlify.app/"],
+            deployLinks: ["https://movie-explorer-zhenya.netlify.app//", "https://movie-explorer-zhenya-dark.netlify.app"],
             github: ["https://github.com/YevheniiKyr/movie_explorer"],
             image: movie_explorer
         },
@@ -40,6 +40,7 @@ const Projects = () => {
              as well as delete those that are no longer needed. This functionality allows for full management of 
              superhero data in an interactive and user-friendly way.`,
             technologies: ["Express JS", "React JS", "Supertest", "Joi"],
+            deployLinks: ["https://superheroes-platform.netlify.app/"],
             github: ["https://github.com/YevheniiKyr/jsn_test"],
             image: superheroes
         }, {

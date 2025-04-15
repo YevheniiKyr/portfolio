@@ -4,7 +4,6 @@ async function send(req, res) {
     console.log(req.body)
 
     try {
-        const myEmail = "jekafekz@gmail.com";
         const {email, message, phone, name} = req.body;
         function createText() {
             return message + '\n' + 'Contacts:' + '\n' + ` email: ${email}` + '  ' + `phone: ${phone}`;
@@ -22,11 +21,10 @@ async function send(req, res) {
         const resultTextOfMessage = createText();
 
         let info = await transporter.sendMail({
-            from: 'testing133spam@gmail.com',
-            to: myEmail,
+            from: process.env.EMAIL_LOGIN,
+            to: process.env.EMAIL_RECIEVER,
             subject: `JOB OFFER: message from ${name}`,
             text: resultTextOfMessage,
-
         })
         res.status(200).json("Email sent")
     } catch (e) {
