@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 
 async function send(req, res) {
-
+    console.log("Sending email...");
     try {
         const {email, message, phone, name} = req.body;
         function createText() {
