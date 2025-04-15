@@ -3,7 +3,7 @@ import Project from "./Project";
 import movie_explorer from "../images/movie_explorer_small.png"
 import anime_shop from "../images/anime_shop.png"
 import chat_main from "../images/chat_main.png"
-import superheroes from "../images/superheroes_hero_page.png"
+import superheroes from "../images/superhero_platform.png"
 import capybaras from "../images/capi_main_page.png"
 
 const Projects = () => {
