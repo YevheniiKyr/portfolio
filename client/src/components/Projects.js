@@ -66,6 +66,7 @@ const Projects = () => {
             It’s a straightforward yet functional implementation of socket-based messaging.`,
             technologies: ["React JS", "Node JS", "MobX"],
             github: ["https://github.com/YevheniiKyr/simpleWebSocketChat"],
+            deployLinks: ["https://simple-web-socket-chat.netlify.app/"],
             image: chat_main
         },
     ]
