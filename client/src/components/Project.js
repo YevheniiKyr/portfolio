@@ -36,6 +36,7 @@ const renderDeployLinks = (project) => {
 
 const renderGithubLinks = (project) => {
     return (
+        project.github ?
             <div className="project-links">
                 {
                     project.github.map(
@@ -48,6 +49,8 @@ const renderGithubLinks = (project) => {
                     )
                 }
             </div>
+            :
+            <> </>
     )
 }
 
@@ -56,10 +59,14 @@ const Project = ({project}) => {
         <section className="project">
             <h3 className="project-name"> {project.name} </h3>
             <p className="description">{project.description}</p>
-            <img
-                src={project.image}
-                alt={project.name}
-            />
+            {
+                project.image ?
+                    <img
+                        src={project.image}
+                        alt={project.name}
+                    /> :
+                    <></>
+            }
             <div className="project-info">
                 {renderTechnologies(project)}
                 {renderDeployLinks(project)}

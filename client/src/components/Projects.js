@@ -5,7 +5,7 @@ import anime_shop from "../images/anime_shop.png"
 import chat_main from "../images/chat_main.png"
 import superheroes from "../images/superhero_platform.png"
 import capybaras from "../images/capi_main_page.png"
-
+import clinical_trials from "../images/clinical_trials.png"
 const Projects = () => {
 
     const projects = [
@@ -69,6 +69,43 @@ const Projects = () => {
             deployLinks: ["https://simple-web-socket-chat.netlify.app/"],
             image: chat_main
         },
+        {
+            name: "Clinical trials",
+            description: `Users can find real clinical trails and apply to participate.
+            Trials are taken from the real API and includes important data describing them.
+            This project demonstrates usage of Next JS to create functional application using SSR.
+            Project also demonstrates usage of Next JS caching and server functions.`,
+            technologies: ["Next JS", "React JS", "Typescript", "MongoDB"],
+            github: ["https://github.com/YevheniiKyr/curify_test"],
+            deployLinks: ["https://curify-test.vercel.app/"],
+            image: clinical_trials
+        },
+        {
+            name: "Recruitment platform",
+            description: `This project is a part of TechMagic Academy Internship.
+            We worked in team which consisted of 7 full stack developers and followed Scrum.
+            Recruiters can create vacancies and tests for them on the platform. They can assign someone to check the test.
+            Potential employees get one-time link to pass the test. After that candidates are sorted by score.
+            Project show ability to work in Scrum team and build project form the scratch`,
+            technologies: ["Angular JS", "Express JS", "Typescript", "MongoDB"],
+            github: ["https://github.com/YevheniiKyr/curify_test"],
+            deployLinks: ["https://curify-test.vercel.app/"],
+        },
+        {
+            name: "You tube data retrieval",
+            description: `This project is a group project to retrieve data from a list of defined channels for further analysis.
+            Data includes text of video, comments, likes-dislikes, information about channel. 
+            Project shows building of modular monolith NestJS application`,
+            technologies: ["Nest JS", "Typescript", "Azure", "MySQL"],
+            deployLinks: [""]
+        },
+        {
+            name: "Recommendation System for e-commerce",
+            description: `This project is a recommendation system for Anime Shop. It shows realisation of multi-component hybrid system, 
+             which consists of three parts: user-based collaborative system for main recommendations, content-based system to find similar products
+             and hybrid system to find similar by description products, which user can potentially assess the highest`,
+            technologies: ["Python", "Flask", "Sklearn", "Numpy", "Pandas"]
+        }
     ]
 
 
