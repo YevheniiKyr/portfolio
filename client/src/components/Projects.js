@@ -92,12 +92,11 @@ const Projects = () => {
             deployLinks: ["https://curify-test.vercel.app/"],
         },
         {
-            name: "You tube data retrieval",
+            name: "Youtube data retrieval",
             description: `This project is a group project to retrieve data from a list of defined channels for further analysis.
             Data includes text of video, comments, likes-dislikes, information about channel. 
             Project shows building of modular monolith NestJS application`,
             technologies: ["Nest JS", "Typescript", "Azure", "MySQL"],
-            deployLinks: [""]
         },
         {
             name: "Recommendation System for e-commerce",
