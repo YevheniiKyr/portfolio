@@ -28,7 +28,7 @@ const Projects = () => {
             explore movies they are curious about, discover new ones, and make informed decisions about what to 
             watch next.`,
             technologies: ["React js", "Redux Toolkit", "Redux saga", "mui"],
-            deployLinks: ["https://movie-explorer-zhenya.netlify.app//", "https://movie-explorer-zhenya-dark.netlify.app"],
+            deployLinks: ["https://movie-explorer-zhenya.netlify.app//"],
             github: ["https://github.com/YevheniiKyr/movie_explorer"],
             image: movie_explorer
         },
