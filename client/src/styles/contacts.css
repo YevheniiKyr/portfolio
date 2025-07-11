@@ -59,9 +59,9 @@
     padding: 10px;
     width: 5rem;
     border-radius: 5px;
-    background-color: #cdd3e1;
+    background-color: white;
+    color: #2a3b93;
     border: none;
-    color: #121d47;
     font-size: 1.2rem;
     cursor: pointer;
     font-weight: 700;
