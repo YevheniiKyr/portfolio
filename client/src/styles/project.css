@@ -26,18 +26,16 @@
 
 .project-name {
     font-size: 1.5rem;
-    color: #2a3b93;
+    color: var(--dark-blue-color);
     font-weight: 700;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 .projects-header {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-family: 'Poppins', sans-serif;
-    color: #2a3b93;
+    color: var(--dark-blue-color);
 }
 
 .project-info {
@@ -47,16 +45,13 @@
 }
 
 .link {
-    color: #0e12e1;
+    color: var(--bright-blue);
     margin-right: 5%;
     text-decoration: none;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-
 }
 
 .description {
-    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     margin-top: 0.5rem;
     font-weight: 450;
@@ -75,11 +70,9 @@
 }
 
 .technologies-header {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    color: #2a3b93;
+    color: var(--dark-blue-color);
     text-align: center;
-    /*font-family: 'Space Mono', monospace;*/
     font-weight: 600;
     margin-top: 0.5rem;
 }
@@ -92,7 +85,7 @@
 }
 
 .badge {
-    background-color: #2a3b93;
+    background-color: var(--dark-blue-color);
     color: white;
     border-radius: 5px;
     display: flex;
@@ -102,46 +95,7 @@
 }
 
 .project:not(:last-child) .divider {
-    background-color: #3b4987;
+    background-color: var(--darkest-blue);
     height: 2px;
     margin-top: 4vh;
 }
-
-@media (max-width: 575px) {
-    :root {
-        font-size: 80%
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-    :root {
-        font-size: 85%
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    :root {
-        font-size: 90%
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    :root {
-        font-size: 95%
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-    :root {
-        font-size: 100%
-    }
-}
-
-@media (min-width: 1400px) {
-    :root {
-        font-size: 100%
-    }
-}
-
-
-

@@ -1,12 +1,11 @@
 .landing {
-    background-color: #2a3b93;
+    background-color: var(--dark-blue-color);
     color: white;
     height: calc(100vh - var(--header-height));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif
 }
 
 .avatar {
@@ -15,7 +14,7 @@
 }
 
 .intro {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-top: 1rem;
 }

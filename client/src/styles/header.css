@@ -2,7 +2,6 @@
     height: var(--header-height);
     background-color: var(--header-color);
     display: flex;
-    font-family: 'Poppins', sans-serif
 }
 
 .external-links {
