@@ -6,6 +6,9 @@ import chat_main from "../images/chat_main.png"
 import superheroes from "../images/superhero_platform.png"
 import capybaras from "../images/capi_main_page.png"
 import clinical_trials from "../images/clinical_trials.png"
+import tm from "../images/tm.png"
+import user_weather  from "../images/user_weather.png"
+
 const Projects = () => {
 
     const projects = [
@@ -90,6 +93,18 @@ const Projects = () => {
             technologies: ["Angular JS", "Express JS", "Typescript", "MongoDB"],
             github: ["https://github.com/YevheniiKyr/curify_test"],
             deployLinks: ["https://curify-test.vercel.app/"],
+            image: tm
+        },
+        {
+            name: "Weather for users",
+            description: `There is a list of users fetched from fakeApi.
+            Users have location. This location is used to fetch weather for user from Weather API.
+            Project shows ability to integrate multiple third-party APIs. 
+            `,
+            technologies: ["Angular JS", "Typescript"],
+            github: ["https://github.com/YevheniiKyr/users_weather_app"],
+            deployLinks: ["https://users-weather-app.netlify.app/"],
+            image: user_weather
         },
         {
             name: "Youtube data retrieval",
@@ -103,7 +118,7 @@ const Projects = () => {
             description: `This project is a recommendation system for Anime Shop. It shows realisation of multi-component hybrid system, 
              which consists of three parts: user-based collaborative system for main recommendations, content-based system to find similar products
              and hybrid system to find similar by description products, which user can potentially assess the highest`,
-            technologies: ["Python", "Flask", "Sklearn", "Numpy", "Pandas"]
+            technologies: ["Python", "Flask", "Sklearn", "Numpy", "Pandas"],
         }
     ]
 
