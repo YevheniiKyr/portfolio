@@ -17,6 +17,7 @@ export const projects = [
             The platform aims to deliver a smooth shopping experience for anime fans.`,
         technologies: ["React js", "MobX", "Node JS", "Express JS", "MongoDB"],
         github: ["https://github.com/YevheniiKyr/anime_shop"],
+        deployLinks: ["https://anime-shop-ukraine.netlify.app/"],
         image: anime_shop
     },
     {
@@ -87,7 +88,6 @@ export const projects = [
             Potential employees get one-time link to pass the test. After that candidates are sorted by score.
             Project show ability to work in Scrum team and build project form the scratch.`,
         technologies: ["Angular JS", "Express JS", "Typescript", "MongoDB"],
-        github: ["https://github.com/YevheniiKyr/curify_test"],
         deployLinks: ["https://curify-test.vercel.app/"],
         image: tm
     },
