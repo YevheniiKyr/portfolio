@@ -88,7 +88,6 @@ export const projects = [
             Potential employees get one-time link to pass the test. After that candidates are sorted by score.
             Project show ability to work in Scrum team and build project form the scratch.`,
         technologies: ["Angular JS", "Express JS", "Typescript", "MongoDB"],
-        deployLinks: ["https://curify-test.vercel.app/"],
         image: tm
     },
     {
